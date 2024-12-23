@@ -13,6 +13,10 @@
     <groupId>pub.synx</groupId>
     <artifactId>user_admin</artifactId>
     <version>2024</version>
+    
+    <properties>
+       <java.version>17</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -75,7 +79,13 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+            <version>0.3.0-RC</version>
+        </dependency>
 
+  
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
