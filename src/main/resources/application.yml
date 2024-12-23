@@ -5,9 +5,9 @@ spring:
   # 配置druid数据源——需要根据实际配置进行修改
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/db_user_admin?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
-    username: root
-    password: root
+    url: jdbc:mysql://pc-bp1268at8st8x315u.rwlb.rds.aliyuncs.com:3306/db_user_admin?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    username: synx
+    password: Wk123456789
     type: com.alibaba.druid.pool.DruidDataSource
 
     # druid 数据源专有配置
@@ -37,6 +37,7 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     call-setters-on-nulls: true
   type-aliases-package: pub.synx.pojo
+
 
 server:
   port: 9000
